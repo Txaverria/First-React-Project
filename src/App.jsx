@@ -4,6 +4,10 @@ import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
 
 function App() {
+  function tabClicked(selectedTab) {
+    
+  }
+
   return (
     <div>
       <Header />
@@ -20,10 +24,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={() => tabClicked('components')}>Components</TabButton>
+            <TabButton onSelect={() => tabClicked('jsx')}>Components</TabButton>
+            <TabButton onSelect={() => tabClicked('props')}>Components</TabButton>
+            <TabButton onSelect={() => tabClicked('state')}>Components</TabButton>
           </menu>
         </section>
       </main>
