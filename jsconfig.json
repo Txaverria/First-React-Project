@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Specify ECMAScript target version (e.g., "ES6")
+    "module": "commonjs", // Specify module code generation (e.g., "commonjs" or "es6")
+    "checkJs": true, // Enable type-checking in JavaScript files
+    "jsx": "react-jsx", // If using React, set this to enable JSX support
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      // Map module paths (helpful for aliasing)
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["src/**/*"], // Include all JS files in the src directory
+  "exclude": ["node_modules"] // Exclude specific directories (optional)
+}
