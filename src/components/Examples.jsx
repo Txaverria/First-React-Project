@@ -29,17 +29,17 @@ export default function Examples() {
       <menu>
         <TabButton
           isSelected={selectedTopic === "components"}
-          onSelect={() => tabClicked("components")}
+          onClick={() => tabClicked("components")}
         >
           Components
         </TabButton>
-        <TabButton isSelected={selectedTopic === "jsx"} onSelect={() => tabClicked("jsx")}>
+        <TabButton isSelected={selectedTopic === "jsx"} onClick={() => tabClicked("jsx")}>
           JSX
         </TabButton>
-        <TabButton isSelected={selectedTopic === "props"} onSelect={() => tabClicked("props")}>
+        <TabButton isSelected={selectedTopic === "props"} onClick={() => tabClicked("props")}>
           Props
         </TabButton>
-        <TabButton isSelected={selectedTopic === "state"} onSelect={() => tabClicked("state")}>
+        <TabButton isSelected={selectedTopic === "state"} onClick={() => tabClicked("state")}>
           State
         </TabButton>
       </menu>
