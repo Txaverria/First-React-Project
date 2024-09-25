@@ -1,11 +1,9 @@
 import TabButton from "./TabButton";
 
-export default function Tabs({ children, buttons }) {
+export default function Tabs({ children, buttons, ButtonsContainer }) {
   return (
     <>
-      <menu>
-        {buttons}
-      </menu>
+      <ButtonsContainer>{buttons}</ButtonsContainer>
       {children}
     </>
   );
